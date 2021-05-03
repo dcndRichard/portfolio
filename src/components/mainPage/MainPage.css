@@ -1,0 +1,77 @@
+.main-page{
+    background-image: url('./mainPageBg.jpg');
+    background-position: 87% 100%;
+    background-repeat: no-repeat;
+    /* background-position: right; */
+    height: 100vh;
+}
+.textBg{
+    /* background-color: #adadada1; */
+    /* background-color: #eeead9fc; */
+    background-color: #eeead94a;
+    /* padding: 0px 0 33px 0; */
+}
+.myname{
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: 2px 2px 2px var(--fontColor);
+    padding: 10px 0;
+}
+.profilePic{
+    width: 110px;
+    margin: 5px auto;
+}
+.profilePic img{
+    border-radius: 50%;
+    /* object-fit: contain; */
+}
+.mytitle{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.description{
+    text-align: center;
+    margin: 10px 0;
+}
+button{
+    padding: 5px;
+    width: 160px;
+    margin: 33px auto 0 auto;
+    display: block;
+    background-color: transparent;
+    /* color: #fff; */
+    color: var(--fontColor);
+    border: none;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 2px #196a00;
+    box-shadow: 2px 2px 2px var(--shadow);
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.frameworks{
+    padding:3px 0 0 0;
+    text-align: center;
+    background-color: #fefefe;
+    border-bottom: 4px solid #000
+}
+.react{color:#61DAFB; font-size: 1.8rem;margin-right: 15px;}
+.angular{color:#c4032f; font-size: 1.8rem;margin-right: 15px;}
+.node{color:#679f63; font-size: 1.8rem;}
+
+@media only screen and (min-width: 315px) and (min-height:440px) {
+    .main-page{
+        background-position: 78% 94%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .main-page{
+        background-position: 87% 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+    .textBg{
+        padding: 0px 0 5px 0;
+    }
+    
+}

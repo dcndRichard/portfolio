@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './components/header/Header';
+import MainPage from './components/mainPage/MainPage';
+import ProjectsPage from './components/projectsPage/ProjectsPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/* FONT AWSOME */
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faBars, faEnvelope, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+library.add(fab, faBars, faEnvelope, faArrowCircleLeft);
+/* ********** */
+
+class App extends React.Component {
+	render() {
+		return (
+			<Router>
+				<div>
+					<Header />
+					<Switch>
+						<Route path="/" exact component={MainPage} />
+						<Route path="/projects" exact component={ProjectsPage} />
+						<Route path="*" render={() => <div>404</div>} />
+					</Switch>
+				</div>
+			</Router>
+		);
+	}
 }
 
 export default App;

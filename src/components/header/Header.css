@@ -1,0 +1,27 @@
+header{
+    background-color: #196a00e3;
+    /* background-color: #28ad00e0; */
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media{
+    flex-basis: 30px;
+    display: flex;
+}
+
+.gmail{color:#1a1a1a;margin-right:10px;}
+.linkedIn{color:#1a1a1a;;margin-right:10px;}
+.git{color:#1a1a1a;margin-right:10px;}
+.facebook{color:#1a1a1a;margin-right:10px;}
+.bars{color:#fefefe;}
+
+@media only screen and (min-width: 600px) {
+    .bars {
+      display: none;
+    }
+    
+}
